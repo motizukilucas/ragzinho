@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    ports:
+    - "3306:3306"
+    environment:
+    - MYSQL_USER=ragzinho
+    - MYSQL_PASSWORD=ragzinho
+    - MYSQL_DATABASE=ragzinho
+    - MYSQL_ROOT_PASSWORD=ragzinho
+
+  # server:
+  #   build:
+  #     context: .
+  #   ports:
+  #   - "6900:6900/udp"
+  #   - "6900:6900/tcp"
+  #   - "5121:5121/udp"
+  #   - "5121:5121/tcp"
+  #   - "6121:6121/udp"
+  #   - "6121:6121/tcp"
+  #   depends_on:
+  #   - db

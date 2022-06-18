@@ -1,0 +1,4 @@
+userid: ragzinho
+passwd: ragzinho
+login_ip: 127.0.0.1
+map_ip: 127.0.0.1
