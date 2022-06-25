@@ -10,16 +10,8 @@ services:
     - MYSQL_PASSWORD=ragzinho
     - MYSQL_DATABASE=ragzinho
     - MYSQL_ROOT_PASSWORD=ragzinho
+    volumes:
+    - "ragzinho_mysql:/home/ubuntu/ragzinho/db_ragzinho"
 
-  # server:
-  #   build:
-  #     context: .
-  #   ports:
-  #   - "6900:6900/udp"
-  #   - "6900:6900/tcp"
-  #   - "5121:5121/udp"
-  #   - "5121:5121/tcp"
-  #   - "6121:6121/udp"
-  #   - "6121:6121/tcp"
-  #   depends_on:
-  #   - db
+volumes:
+  ragzinho_mysql: { driver: local }
