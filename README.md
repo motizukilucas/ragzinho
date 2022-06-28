@@ -1,3 +1,5 @@
+# This is a fork from [rAthena](github.com/rathena/rathena) with Docker and some sample terraform code
+
 ### Ragzinho Infra
 - [x] user data to enable docker without sudo
 - user data to mount EBS volume
